@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --branco: white;
+  --preto: black;
+  --extremos: #151823;
+  --textoextremos: #666873;
+  --dourado: #ffd700;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--extremos);
+}
+
+body {
+background-color: #1a1c27ec;
+}
+
+.pheader {
+transition: all 0.3s;
+font-family: 'Merriweather', serif;
+font-size: 20px;
+margin-top: 25px;
+margin-bottom: 25px;
+margin-left: 25px;
+
+color: var(--branco);
+}
+
+.pheader:hover {
+  color: var(--dourado);
+  transition: all 0.6s;
+  cursor: pointer;
+  font-size: 24px;
+  }
+
+nav {
+  margin-right: 25px;
+}
+
+nav a {
+  font-size: 20px;
+  transition: all 0.6s;
+  color: var(--textoextremos);
+  padding: 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  transition: all 0.6s;
+  color: white;
+  font-size: 24px;
+}
+
+h1 {
+  margin-top: 60px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 55px;
+
+  letter-spacing: 2px;
+}
+
+.pintroducao {
+  font-size: 20px;
+}
+
+.cadaclique:hover {
+cursor: pointer;
+color: var(--dourado)
+}
+
+.introducao {
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.divimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divimg img {
+  box-shadow: 0px 0px 10px var(--preto)
+/* profundidade para a imagem, "sombra" preta. */
+}
+
+.imgsessao {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* formulario */
+
+h2 {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25px;  
+}
+
+h2:hover {
+  cursor: pointer;
+  color: #ffd700;
+}
+
+hr {
+  margin-top: 2px; /* o input já possui 15px de margin-bottom, adicionamos +2 */
+  margin-bottom: 15px;
+}
+
+.formulario {
+  margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: var(--preto);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white 
+  /* box-shadow fará o brilho da tela de cadastro! */
+  }
+  
+  form label {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+  
+  form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="number"], form input[type="date"], form input[type="time"], form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 20px);
+  }
+  
+  /* focus = contorno de foco (branco) do navegador */
+  form input[type="text"]:focus, form input[type="email"]:focus, form input[type="tel"]:focus, form input[type="number"]:focus, form input[type="date"]:focus, form input[type="time"]:focus, form textarea:focus {
+    outline: none; /* remove o contorno que o site coloca no input (ao ser clicado) */
+    box-shadow: 0px 0px 3px var(--dourado);
+  }
+  
+  form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  form button[type="submit"] {
+    transition: all 0.3s;
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    transition: all 0.3s;
+    background-color: green;
+    padding: 12px 25px;
+  }
+  
+  footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 19px;
+    padding: 20px;
+    background-color: var(--extremos);
+    color: white;
+}

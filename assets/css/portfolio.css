@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco: white;
+    --preto: black;
+    --extremos: #151823;
+    --textoextremos: #666873;
+    --dourado: #ffd700;
+}
+
+.acervocompleto {
+    background-image: url(../img/fotografoigor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .agendesessao {
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #689bd4;
+    color: white;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+
+  .agendesessao:hover {
+    cursor: pointer;
+    background-color: #447fc2;
+  }
+  
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--extremos);
+}
+
+body {
+background-color: #1a1c27ec;
+}
+
+.pheader {
+transition: all 0.3s;
+font-family: 'Merriweather', serif;
+font-size: 20px;
+margin-top: 25px;
+margin-bottom: 25px;
+margin-left: 25px;
+
+color: var(--branco);
+}
+
+.pheader:hover {
+    color: var(--dourado);
+    transition: all 0.6s;
+    cursor: pointer;
+    font-size: 24px;
+    }
+
+nav {
+    margin-right: 25px;
+}
+
+nav a {
+    font-size: 20px;
+    transition: all 0.6s;
+    color: var(--textoextremos);
+    padding: 18px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    transition: all 0.6s;
+    color: white;
+    font-size: 24px;
+}
+
+h1 {
+    margin-top: 60px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 55px;
+
+    letter-spacing: 2px;
+}
+
+.profissional:hover {
+cursor: pointer;
+color: var(--dourado)
+}
+
+.introducao {
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.agendesessao button {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.decoracao {
+    text-decoration: none;
+}
+
+.acervocima, .acervobaixo {
+    border: solid 1px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acervobaixo {
+    flex-direction: column;
+}
+
+.acervo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pimagens {
+    padding: 5px;
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: solid 1px black; /*apenas top pois no codigo acima a borda ja fica em baixo */
+    font-size: 25px;
+}
+
+.pvejamais {
+    margin-left: 20px;
+    padding: 13px;
+    border: none;
+    color: black;
+    background-color: wheat;
+}
+
+.pvejamais:hover {
+cursor: pointer;
+background-color: rgb(250, 214, 147);
+}
+
+.imagem1 {
+    background-image: url(../img/foto1.jpeg);
+}
+
+.imagem2 {
+    background-image: url(../img/foto2.jpeg);
+}
+
+.imagem3 {
+    background-image: url(../img/foto3.jpeg);
+}
+
+.imagem4 {
+    background-image: url(../img/foto4.jpeg);
+}
+
+.imagem5 {
+    background-image: url(../img/foto5.png);
+}
+
+.imagem6 {
+    background-image: url(../img/foto6.jpg);
+}
+
+.imagem7 {
+    background-image: url(../img/foto7.webp);
+}
+
+.imagem8 {
+    background-image: url(../img/foto8.jpg);
+}
+
+.imagem9 {
+    background-image: url(../img/foto9.jpg);
+}
+
+.imagem10 {
+    background-image: url(../img/igor.png);
+}
+
+.publi1 {
+    background-image: url(../img/publicidade1.webp);
+}
+
+.publi2 {
+    background-image: url(../img/publicidade2.jpg);
+}
+
+.publi3 {
+    background-image: url(../img/publicidade3.jpg);
+}
+
+.publi4 {
+    background-image: url(../img/publicidade4.jpg_large);
+}
+
+.publi5 {
+    background-image: url(../img/publicidade5.avif);
+}
+
+.imagem1, .imagem2, .imagem3, .imagem4, .imagem5, .imagem6, .imagem7, .imagem8, .imagem9, .imagem10, .publi1, .publi2, .publi3, .publi4, .publi5 {
+    width: 150px;
+    height: 150px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.7s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.imagem1:hover, .imagem2:hover, .imagem3:hover, .imagem4:hover, .imagem5:hover , .imagem6:hover, .imagem7:hover, .imagem8:hover, .imagem9:hover, .publi1:hover, .publi2:hover, .publi3:hover, .publi4:hover, .publi5:hover {
+    transition: all 0.7s;
+    cursor: pointer;
+    width: 200px;
+    height: 180px;
+}
+
+.imagem10:hover {
+    background-image: url(../img/apaixonadonoigor.png);
+
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.publi4:hover {
+    background-image: url(../img/juizaoamarelo.webp);
+
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+hr.anunciohr {
+    border: none;
+    height: 1px;
+    background-color: var(--dourado);
+}
+
+.anunciofotografo:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 19px;
+    padding: 20px;
+    background-color: var(--extremos);
+    color: white;
+}

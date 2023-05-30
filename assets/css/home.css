@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco: white;
+    --preto: black;
+    --extremos: #151823;
+    --textoextremos: #666873;
+    --dourado: #ffd700;
+}
+body {
+    background-image: url(../img/fundobody.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffc843;
+    cursor: default; 
+    font-size: 48px;
+}
+
+h1, h2 {
+    margin-right: 55px;
+}
+
+h2, p, button {
+    cursor: default; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* deixará um aspecto mais bonito; letra mais fina. */
+}
+
+h2, p {
+    color: #fff;
+}
+
+hr {
+    background: white;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    transition: all 0.8s;
+
+    background-color: #fff;
+    color: grey;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 450px;
+    height: 60px;
+}
+
+button:hover {
+    transition: all 0.8s;
+    color: white;
+    cursor: pointer;
+}
+
+.whats:hover {
+    transition: all 0.8s;
+    background-color: #25d366;
+}
+
+.insta:hover {
+    background-image: url(../img/instahex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.outrosbuttons:hover {
+    transition: all 0.8s;
+    background-color: #ffc843;
+}
+
+@media (max-width: 465px) {
+    main button {
+        width: 350px;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 365px) {
+    .description h2 {
+        font-size: 12px;
+    }
+
+    .description__title {
+        display: block;
+        margin: 0 auto;
+        font-size: 32px;
+    }
+
+    main button {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    footer p {
+        font-size: 24px;
+    }
+}

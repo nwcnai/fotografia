@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/agendesessao.css">
+</head>
+<body>
+    <header>
+        <p class="pheader">Igor Cacerez</p>
+
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="portfolio.html" target="_blank">Portfólio</a>
+            <a href="cursos.html" target="_blank">Cursos</a>
+        </nav>
+    </header>
+
+    <div class="introducao">
+        <h1>Apreciando a beleza de<span class="cadaclique"> cada clique</span></h1>
+        <p class="pintroducao">Seus melhores momentos eternizados. Aqui cada imagem conta uma história!</p>
+    </div>
+
+<div class="divimg">
+    <img src="assets/img/imgsessao.jpg" alt="imagem sessao" class="imgsessao">
+</div>
+
+    <section class="formulario">
+        <form>
+            <h2>Preparando sua sessão de fotos!</h2>
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Insira seu nome completo">
+
+            <label for="nome">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="Insira um telefone para contato (com DDD)">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Insira seu email">
+
+<hr>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required placeholder="Insira um tema principal da sessão">
+
+            <label for="assunto">Quant. de fotos:</label>
+            <input type="number" id="quantfotos" name="quantfotos" required min="1" max="99" placeholder="Insira a quantidade de fotos que deseja">
+
+<hr>
+
+            <label for="data-preferencial">Data preferencial da sessão:</label>
+            <input type="date" id="data-preferencial" name="data-preferencial" required>
+            
+            <label for="hora-preferencial">Hora preferencial da sessão:</label>
+            <input type="time" id="hora-preferencial" name="hora-preferencial" required>
+            
+            <label for="Observação">Observação/dúvidas:</label>
+            <input type="text" id="observação" name="observação" placeholder="Caso queira, insira uma observação ou uma dúvida (opcional)">
+
+            <button type="submit">Concluir cadastro</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 - Igor Fotografias. Todos os direitos reservados.
+    </footer>
+</body>
+</html>

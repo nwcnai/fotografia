@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor - Cursos de fotografia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/cursos.css">
+</head>
+<body>
+    <header>
+        <p class="pheader">Igor Cacerez</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="agendesessao.html" target="_blank">Sessão Fotográfica</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Cursos disponíveis:</h1>
+
+        <div class="card">
+            <div class="fotoproduto">
+                <img src="assets/img/logophotoshop.png" alt="logo ps">
+            </div>
+
+            <div class="produtodiv">
+                <h2>Curso profissional de edição de fotografia</h2>
+                <div class="precoantigo">de R$ 1499,99 por</div>
+                <div class="preconovo">R$ 899,00</div>
+                <div class="buttons_container">
+                    <div class="botaocomprarps">
+                        Comprar
+                    </div>
+                    <div class="botaogostei">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="fotoproduto">
+                <img src="assets/img/curso1.png" alt="curso 1">
+            </div>
+
+            <div class="produtodiv">
+                <h2>Curso inicial<br> de fotografia</h2>
+                <div class="precoantigo">de R$ 99,99 por</div>
+                <div class="preconovo">R$ 70,00</div>
+                <div class="buttons_container">
+                    <div class="botaocomprar">
+                        Comprar
+                    </div>
+                    <div class="botaogostei">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="fotoproduto">
+                <img src="assets/img/curso2.png" alt="curso 2">
+            </div>
+
+            <div class="produtodiv">
+                <h2>Curso profissional<br>de fotografia</h2>
+                <div class="precoantigo">de R$ 399,99 por</div>
+                <div class="preconovo">R$ 249,00</div>
+                <div class="buttons_container">
+                    <div class="botaocomprar">
+                        Comprar
+                    </div>
+                    <div class="botaogostei">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 - Igor Fotografias. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        var botoes = document.querySelectorAll(".botaogostei")
+    
+        for (var i = 0; i < botoes.length; i++) {
+            botoes[i].addEventListener("click", function() {
+                if (this.style.backgroundColor === "red") {
+                    this.style.backgroundColor = "#3a3b3c";
+                } else {
+                    this.style.backgroundColor = "red";
+                }
+            })
+        }
+    </script>    
+</body>
+</html>

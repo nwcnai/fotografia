@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco: white;
+    --preto: black;
+    --extremos: #151823;
+    --textoextremos: #666873;
+    --dourado: #ffd700;
+}
+
+body {
+    background-color: #18181A;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 630px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-size: 48px;
+    color: #EBEE00;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 630px;
+    background-color: #242526;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #111111;
+    margin-bottom: 30px;
+}
+
+.card .fotoproduto {
+    display: flex;
+    align-items: center;
+}
+
+.card .fotoproduto img {
+    width: 218px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.card .produtodiv {
+    width: 280px;
+    padding: 30px 0;
+}
+
+.card .produtodiv h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.card .produtodiv .precoantigo {
+    color: #646464;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.card .produtodiv .preconovo {
+    color: #EBEE00;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.buttons_container {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.botaocomprar, .botaocomprarps {
+    transition: all 0.6s;
+
+    width: 177px;
+    text-align: center;
+    background-color: #3A3B3C;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.botaocomprar:hover {
+    transition: all 0.5s;
+    background-color: #EBEE00;
+    color: black;
+}
+
+.botaocomprarps:hover {
+    transition: all 0.5s;
+    background-color: #31a8ff;
+    color: black;
+}
+
+.botaocomprar:hover, .botaogostei:hover, .botaocomprarps {
+cursor: pointer;
+}
+
+.botaogostei {
+    width: 65px;
+    text-align: center;
+    background-color: #3A3B3C;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+}
+
+.botaogostei svg {
+    width: 16px;
+}
+
+.botaogostei:active {
+    background-color: #FF4D4D;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-size: 19px;
+    padding: 20px;
+    background-color: #646464;
+    color: white;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #646464;
+}
+
+.pheader {
+    transition: all 0.3s;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    
+    color: white;
+    }
+    
+    .pheader:hover {
+        color: #EBEE00;
+        transition: all 0.6s;
+        cursor: pointer;
+        font-size: 24px;
+        }
+
+        nav {
+            margin-right: 25px;
+        }
+        
+        nav a {
+            font-size: 20px;
+            transition: all 0.6s;
+            color: wheat;
+            padding: 18px;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            transition: all 0.6s;
+            color: #EBEE00;
+            font-size: 24px;
+        }
